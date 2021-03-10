@@ -1,0 +1,3 @@
+ggal_alpha,/absolute/path/to/data/rnaseq/reads/ggal_alpha_1.fq.gz,/absolute/path/to/data/rnaseq/reads/ggal_alpha_2.fq.gz
+ggal_theta,/absolute/path/to/data/rnaseq/reads/ggal_theta_1.fq.gz,/absolute/path/to/data/rnaseq/reads/ggal_theta_2.fq.gz
+ggal_gamma,/absolute/path/to/data/rnaseq/reads/ggal_gamma_1.fq.gz,/absolute/path/to/data/rnaseq/reads/ggal_gamma_2.fq.gz
