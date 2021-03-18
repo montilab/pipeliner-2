@@ -30,9 +30,9 @@ def load_reads(path, paired) {
       .set {reads}
   } else {
     Channel
-        .fromPath( path )
-        .map { [it.getName().split("\\_1|\\_2", 2)[0], [it]] }
-        .set {reads}
+      .fromPath( path )
+      .map { [it.getName().split("\\_1|\\_2", 2)[0], [it]] }
+      .set {reads}
   }
 }
 
