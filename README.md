@@ -139,3 +139,36 @@ workflow {
   ESET( FEATURE_COUNTS_MATRIX.out[0] )
 }
 ```
+
+### Instructions for running pipeliner-2 on BU SCC
+
+## Clone Repository
+
+```bash
+$ git clone https://github.com/montilab/pipeliner-2
+```
+
+## Activate/Build Conda environment 
+
+```bash
+conda env create --name pipeliner2 --file=pipeliner.yml
+conda activate pipeliner2
+```
+
+## Load nextflow
+
+```bash
+module load nextflow
+```
+
+## Update paths to the working directory, index, input and output files in rnaseq.nf file
+
+## Make sure the regex in load_bams workflow matches your fastq files 
+
+
+
+
+
+
+
+
