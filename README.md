@@ -1,6 +1,6 @@
 # Pipeliner DSL2
 
-<i>Pipeliner upgraded for Nextflow DSL2 modules</i>   
+<i>[Pipeliner](https://github.com/montilab/pipeliner) upgraded for Nextflow DSL2 modules</i>   
 
 [![Nextflow](https://img.shields.io/badge/nextflow-DSL2-23aa62.svg?labelColor=000000)](https://www.nextflow.io/)
 
