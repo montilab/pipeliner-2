@@ -7,7 +7,7 @@
 ## Clone Repository
 
 ```bash
-$ git clone https://github.com/montilab/pipeliner-2
+$ git clone https://github.com/montilab/pipeliner-2 --branch dev
 ```
 
 ## Installing Nextflow
