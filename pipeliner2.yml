@@ -1,4 +1,4 @@
-name: /restricted/projectnb/montilab-p/tools/pipeliner-2/Amulya/conda_envs/pipeliner
+name: pipeliner-2
 channels:
   - bioconda/label/cf201901
   - pipeliner
@@ -134,4 +134,4 @@ dependencies:
   - xz=5.2.3=h55aa19d_2
   - yaml=0.1.7=had09818_2
   - zlib=1.2.11=h470a237_3
-prefix: /restricted/projectnb/montilab-p/tools/pipeliner-2/Amulya/conda_envs/pipeliner
+  

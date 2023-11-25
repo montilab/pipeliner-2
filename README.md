@@ -145,14 +145,24 @@ workflow {
 ## Clone Repository
 
 ```bash
-$ git clone https://github.com/montilab/pipeliner-2 --branch dev
+cd /path/to/folder/
+git clone https://github.com/montilab/pipeliner-2 --branch dev
+# pipeliner-2 will be at /path/to/folder/pipeliner-2
 ```
 
 ## Activate/Build Conda environment 
 
 ```bash
-conda env create --name pipeliner2 --file=pipeliner.yml
-conda activate pipeliner2
+conda env create -n pipeliner-2 -f pipeliner-2/pipeliner.yml
+conda activate pipeliner-2
+```
+
+or (if you want to specify a destination)
+
+```bash
+# MLAB=/restricted/projectnb/montilab-p
+conda env create -f pipeliner-2/pipeliner-2.yml -p $MLAB/tools/pipeliner-2/envs
+conda activate $MLAB/tools/pipeliner-2/envs
 ```
 
 ## Load nextflow
@@ -161,9 +171,9 @@ conda activate pipeliner2
 module load nextflow
 ```
 
-## Update paths to the working directory, index, input and output files in rnaseq.nf file
+## Update paths to the working directory, index, input and output files in rnaseq.config file
 
-## Make sure the regex in load_bams workflow matches your fastq files 
+## Make sure the regex in load_reads or load_bams workflow matches your fastq/bam files 
 
 
 
