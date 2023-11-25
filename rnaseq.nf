@@ -29,6 +29,7 @@ def load_reads(path, paired) {
   }
 }
 
+// paired-end reads
 workflow {
   load_reads("${params.wd}/raw_data/rnaseq/reads/*_{1,2}.fq.gz", params.paired)
   TRIM_GALORE( reads )
