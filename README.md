@@ -2,7 +2,11 @@
 
 <i>[Pipeliner](https://github.com/montilab/pipeliner) upgraded for Nextflow DSL2 modules</i>   
 
-[![Nextflow](https://img.shields.io/badge/nextflow-DSL2-23aa62.svg?labelColor=000000)](https://www.nextflow.io/)
+[![Built With](https://img.shields.io/badge/nextflow-DSL2-23aa62.svg?labelColor=000000)](https://www.nextflow.io/)
+![Compatibility](https://img.shields.io/badge/Compatibility-Linux%20%2F%20OSX-orange.svg)
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
+[![GitHub Issues](https://img.shields.io/github/issues/montilab/pipeliner-2.svg)](https://github.com/montilab/pipeliner-2/issues)
+
 
 ## Clone Repository
 
