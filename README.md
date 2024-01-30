@@ -9,7 +9,6 @@
 
 # Overview
 
-We developed the _yQTL Pipeline_ – with ‘y’ indicating the dependent quantitative variable being modeled – to facilitate and automate large-scale QTL analysis. Prior to genome-wide association test, the pipeline supports the calculation or the direct input of pre-defined genome-wide principal components and genetic relationship matrix when applicable. User-specified covariates can also be provided. Depending on whether familial relatedness exists among the subjects or not, genome-wide association tests will be performed using either a linear mixed-effect model or a linear model, respectively. Through the adoption of the workflow management tool Nextflow, the pipeline parallelizes the analysis steps to optimize run-time and ensure reproducibility of the results. A user-friendly R Shiny App is also provided for the visualization of the results, including Manhattan plots of user-selected phenotype traits, and trait-QTL connection networks based on user-specified p-value thresholds.
 
 ## Clone Repository
 
