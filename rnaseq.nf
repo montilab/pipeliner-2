@@ -42,8 +42,10 @@ def load_reads(path, paired) {
       .set {reads}
   }
 }
-// paired-end reads
-workflow {
+/**************************************************
+* PAIRED-END RNA-SEQ
+**************************************************/
+workflow rnaseq_from_fastq_paired {
   load_reads("${params.wd}/raw_data/*_{R1,R2}*.fastq*.gz", params.paired)
   TRIM_GALORE( reads )
   HISAT_MAPPING( TRIM_GALORE.out[0] )
@@ -58,8 +60,10 @@ workflow hisat_index {
   HISAT_INDEX( params.fasta, params.gtf )
 }
 
-// single-end reads
-workflow rnased_from_fastq_single {
+/**************************************************
+* SINGLE-END RNA-SEQ
+**************************************************/
+workflow rnaseq_from_fastq_single {
   load_reads("${params.wd}/data/rnaseq/reads/*_1.fq.gz", params.paired)
   TRIM_GALORE( reads )
   HISAT_MAPPING( TRIM_GALORE.out[0] )
@@ -68,10 +72,10 @@ workflow rnased_from_fastq_single {
   ESET( FEATURE_COUNTS_MATRIX.out[0] )
   MULTIQC( ESET.out[0] )
 }
-*/
 
-/*
-// start from bam files
+/**************************************************
+* RNA-SEQ FROM BAM
+**************************************************/
 def load_bams(path) {
   Channel
       .fromPath( path )
@@ -85,4 +89,4 @@ workflow rnaseq_frombam {
   ESET( FEATURE_COUNTS_MATRIX.out[0] )
   MULTIQC( ESET.out[0] )
 }
-*/
+
