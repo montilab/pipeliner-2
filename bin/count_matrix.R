@@ -5,7 +5,13 @@ featurecounts_importer = function(fnames) {
   genes <- first[[1]]
   rest <- do.call(cbind, lapply(fnames, function(fname){
     df <- read.delim(fname, header=TRUE, sep="\t", skip=1, stringsAsFactors=FALSE)
-    df[,ncol(df)-1]
+    ## trying to make it more robust
+    count_idx <- grep(".bam", colnames(df))
+    stopifnot(length(count_idx)==1)
+    stopifnot(count_idx>0)
+    df[,count_idx]
+    ## old version
+    #df[,ncol(df)]
   }))
   colnames(rest) <- basename(fnames)
   rest <- data.frame(genes, rest, stringsAsFactors=FALSE)
